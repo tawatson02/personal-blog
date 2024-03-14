@@ -1,0 +1,17 @@
+.backcolor {
+    background: rgb(249, 249, 249);
+    color: black;
+}
+.backcolor.dark-mode {
+    background: rgb(34, 30, 30);
+    color: rgb(249, 249, 249);
+}
+.switch{
+background-color: blue;
+color: white;   
+border: none;
+cursor: pointer;
+}
+
+
+
