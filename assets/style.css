@@ -8,10 +8,81 @@
 }
 .switch{
 background-color: blue;
-color: white;   
+color: white;
 border: none;
 cursor: pointer;
 }
 
 
 
+/*h1{
+    
+    flex: 1;
+    align-self: center;
+    text-align: center;
+    background-size: 100%;
+}*/
+
+body{
+    height: 100%;
+}
+
+/* #firstBlog{
+
+} */
+
+#mainContainer{
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+
+#leftBox{
+display: flex;
+flex: 1;
+margin: 2%;
+}
+
+#leftBoxCircle{
+  align-self: center;
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  background-image: linear-gradient(to bottom, rgb(38, 75, 14) , rgb(4, 8, 123) );
+  border-radius: 50%;
+}
+
+#leftBoxCircle>h1{
+  position:absolute;
+  top:50%; left:50%;
+  transform: translate(-50%, -50%);
+  margin:0;
+}
+
+#rightBox{
+    display: flex;
+    flex: 1;
+    margin: 2%;
+}
+#rightBox>form{
+  align-self: center;
+  display: table;
+  flex-direction: row;
+  flex: 1;
+}
+
+.mainContainerHidden>div.leftBox,
+.mainContainerHidden>div.leftBoxCircle,
+.mainContainerHidden>div.leftBoxCircle>h1,
+.mainContainerHidden>div.rightBox>form
+{
+  display: none !important;
+}
+
+.visable {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
